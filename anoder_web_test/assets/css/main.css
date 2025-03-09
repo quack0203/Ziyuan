@@ -4687,3 +4687,94 @@ input, select, textarea {
 		}
 
 	}
+
+
+
+
+
+/*
+	這裡是新創作的css內容
+	1.首頁頭像
+*/
+
+
+
+/* 讓 h1 內的圖片置中 */
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+	gap: 40px; /* 讓頭像與文字間距更明顯 */
+}
+
+/* 外部細發光框 */
+.glow-frame {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(45deg, hsl(29, 100%, 50%), #ffbb00, #ff5e00, #ffd209);
+    background-size: 300% 300%;
+    animation: glow 3s infinite linear;
+    padding: 5px; /* 讓光暈不影響圖片 */
+}
+
+/* 主要圖片區域 */
+#flip-circle {
+    width: 240px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(45deg, hsl(29, 100%, 61%), #ffcd43, #ff853e, #ffdf4f);
+    animation: pulse 3s infinite alternate;
+}
+
+/* 內部翻轉動畫 */
+.flip-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+/* 圖片前後 */
+.flip-front, .flip-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-size: cover; /* 確保圖片完整 */
+    background-position: center;
+    border-radius: 50%;
+}
+
+/* 第一張圖片 */
+.flip-front {
+    background-image: url('../Photo_stickers/human.jpg');
+}
+
+/* 第二張圖片（翻轉後） */
+.flip-back {
+    background-image: url('../Photo_stickers/furry.jpg');
+    transform: rotateY(180deg);
+}
+
+/* 閒置後翻轉 */
+.flipped .flip-inner {
+    transform: rotateY(180deg);
+}
+
+/* 細發光框動畫 */
+@keyframes glow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
