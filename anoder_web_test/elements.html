@@ -429,55 +429,72 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 					</div>
 
-				<!-- Footer -->
+				<!-- Footer 
+					25/03/13  更新讓他寄信是真能動作
+					立用formspree，可以不用後端(因我免費網域所以她不支援後端)
+					來去做寄信
+				 -->
 					<footer id="footer">
+
+
 						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
+							<form id="contactForm" class="contactForm" method="post" action="https://formspree.io/f/xoveqbly" novalidate>
+							  <div class="fields">
+								<div class="field">
+								  <label for="name">Name</label>
+								  <textarea name="name" id="name" rows="1" placeholder="請輸入您的名稱" required></textarea>
 								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
+								<div class="field">
+								  <label for="email">Email</label>
+								  <textarea name="email" id="email" rows="1" placeholder="請輸入您的gmail信箱" required></textarea>
+								</div>
+								<div class="field">
+								  <label for="message">Message</label>
+								  <textarea name="message" id="message" rows="3" placeholder="寫下您寶貴的訊息" required></textarea>
+								</div>
+							  </div>
+							  <!-- 顯示錯誤訊息區塊 -->
+							  <div id="error-message" style="display: none; color: red; margin-bottom: 10px;">
+								尚有欄位未填寫
+							  </div>
+							  <ul class="actions">
+								<li><input type="submit" value="🦝送出信件🩲" /></li>
+							  </ul>
 							</form>
-						</section>
+						  </section>
+						
+
 						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
+
 							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
+								<h3>現居住地</h3>
+								<p><a>桃園平鎮區</a></p>
 							</section>
+
+							<section>
+								<h3>手機電話</h3>
+								<p><a>0912-923-951</a></p>
+							</section>
+
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
+								<p>
+
+								<a href="mailto:hcu551263@gmail.com?subject=聯絡我們&body=您好，我想詢問關於...">hcu551263@gmail.com</a>
+								</p>
 							</section>
+
 							<section>
-								<h3>Social</h3>
+								<h3>社群帳號</h3>
 								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://youtube.com/channel/UC0gIQCDXrhj4_fnNGa5_Rsg?si=ZMuWL1I-xS_KHjG4" class="icon brands fa-youtube"><span class="label">youtube</span></a></li>
+									<li><a href="https://www.facebook.com/share/1MxLk1ZyBn/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/326dxy?igsh=MW54Z3F5bXNjb2V4bQ==" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/quack0203" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 						</section>
 					</footer>
-
 				<!-- Copyright -->
 					<div id="copyright">
 						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
