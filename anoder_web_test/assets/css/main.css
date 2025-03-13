@@ -4778,3 +4778,16 @@ input, select, textarea {
 }
 
 
+
+
+
+/*
+	2.顏色變化點，有關於如果我沒有輸入框框內
+*/
+.error {
+	border: 2px solid red !important;
+  }
+  
+
+
+
