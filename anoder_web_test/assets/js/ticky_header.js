@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
           obj.header.style.left = '';
           obj.header.style.width = '';
           obj.header.style.boxShadow = 'none';
-          obj.header.style.background = '';
+          obj.header.style.background = "rgb(255, 255, 255)";
         } 
         // **當文章滾出且底部仍遠離其他 header 時，sticky header 固定**
         else if (articleRect.top < threshold && articleRect.bottom > headerHeight + switchMargin) {
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
           obj.header.style.left = Math.round(articleRect.left) + 'px';
           obj.header.style.width = Math.round(articleRect.width) + 'px';
           obj.header.style.boxShadow = '0 2px 8px rgba(0,0,0,0.2)';
-          obj.header.style.background = '#fff';
+          obj.header.style.background = "rgba(211, 211, 211, 0.66)";
           obj.header.style.zIndex = "9999";
         } 
         // **當滾動回去時，讓 header 提早顯示**
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
           obj.header.style.left = Math.round(articleRect.left) + "px";
           obj.header.style.width = Math.round(articleRect.width) + "px";
           obj.header.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
-          obj.header.style.background = "#fff";
+          obj.header.style.background = "rgba(211, 211, 211, 0.67)";
           obj.header.style.zIndex = "9999";
         }
       } else {
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
         obj.header.style.left = '';
         obj.header.style.width = '';
         obj.header.style.boxShadow = 'none';
-        obj.header.style.background = '';
+        obj.header.style.background = "rgb(255, 255, 255)";
       }
     });
   }
