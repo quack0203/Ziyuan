@@ -7,12 +7,16 @@
 <html>
 	<head>
 		<title>偶的酷酷網頁🥺</title>
+		<!-- For favicon png -->
+
+
 
 		<!-- 0317 -->
 		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
 		<!-- 0317 -->
 
-		
+
+
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -23,8 +27,6 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
-
 					<div id="intro">
 						<!-- 0309 新增頭像 -->
 						<div class="intro-content">
@@ -32,7 +34,7 @@
 								<div id="flip-circle">
 									<div class="flip-inner">
 										<div class="flip-front"></div>
-										<div class="flip-back"></div>
+										<div class="flip-back"></div>6
 									</div>
 								</div>
 							</div>
@@ -58,9 +60,9 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">This is Massively</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
+							<li class="active"><a href="index.html">關於我</a></li>
+							<li><a href="generic.html">工作經驗</a></li>
+							<li><a href="elements.html">興趣愛好</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://youtube.com/channel/UC0gIQCDXrhj4_fnNGa5_Rsg?si=ZMuWL1I-xS_KHjG4" class="icon brands fa-youtube"><span class="label">youtube</span></a></li>
@@ -85,24 +87,24 @@
 
 				<!-- Main -->
 					<div id="main">
-
-						<!-- 0318 這裡在做sticky header 的操作-->
 						<article class="post featured">
 							<header class="major">
-								<!-- 這個 `div` 是新的觸發點，當滾回這裡時觸發上個 sticky-header -->
-								<div class="trigger-point"></div>
-						
-								<h2><a href="#">QWE</a></h2>
-								<div class="placeholder"></div>
-								<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-								facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-								amet nullam sed etiam veroeros.</p>
+								<h2><a href="#">自我介紹👦</a></h2> <!-- 這個保持不變，依然置中 -->
 							</header>
-							<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-							<ul class="actions special">
-								<li><a href="#" class="button large">Full Story</a></li>
-							</ul>
+						
+							<!-- 讓文字和圖片分開 -->
+							<div class="text-image-wrapper">
+								<p>我是一個從南部北漂上來的學生<br/>
+									在高中做專題時，會經常碰觸到軟硬體的相關工作<br />
+									正是因為這個原因，讓我對於電子領域更加的附有熱情<br />
+									因此現在才會選擇電子科來讓我的能力更加提升</p>
+						
+								<a href="#" class="image main">
+									<img src="images/1_ME.jpg" alt="自我介紹圖片" />
+								</a>
+							</div>
 						</article>
+						
 
 						<article class="post featured">
 							<header class="major">
@@ -115,7 +117,7 @@
 								facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
 								amet nullam sed etiam veroeros.</p>
 							</header>
-							<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+							<a href="#" class="image main"><img src="images/1_ME.jpg" alt="" /></a>
 							<ul class="actions special">
 								<li><a href="#" class="button large">Full Story</a></li>
 							</ul>
@@ -136,12 +138,10 @@
 							<ul class="actions special">
 								<li><a href="#" class="button large">Full Story</a></li>
 							</ul>
-						</article>					
-						<!-- 0318 這裡在做sticky header 的操作-->
-
-
-
+						</article>
 						
+
+
 						<!-- Posts -->
 							<section class="posts">
 								<article>
@@ -322,11 +322,8 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/flip.js"></script>
-
-			<!-- 增加sticky_header  javascript -->
 			<script src="assets/js/ticky_header.js"></script>
 
-		
 			<script src="assets/js/mail.js"></script>
 	</body>
 </html>
