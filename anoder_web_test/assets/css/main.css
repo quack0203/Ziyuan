@@ -4546,6 +4546,7 @@ input, select, textarea {
 
 			#navPanelToggle {
 				font-size: 0.8rem;
+				top: 0.25rem;
 				padding: 0.25rem 1rem;
 			}
 
@@ -4787,6 +4788,54 @@ input, select, textarea {
 .error {
 	border: 2px solid red !important;
   }
+
+
+/*
+	3.Stiky Header 顯示棒棒
+*/
+
+
+
+
+/* 讓 post 內容相對定位，sticky header 需要這個 */
+.post.featured {
+    position: relative;
+}
+
+/* Sticky header 樣式 */
+.post.featured .sticky-header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 80%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: none; /* 預設不顯示，滾動時才出現 */
+}
+
+/* 確保標題預設可見 */
+.post.featured h2 {
+    display: block;
+}
+
+/* 觸發點 (滾回時讓 sticky-header 提前顯示) */
+.trigger-point {
+    position: absolute;
+    top: 100px; /* 控制提前顯示的距離 */
+    left: 0;
+    width: 100%;
+    height: 1px;
+    visibility: hidden; /* 隱藏，但仍可觸發 */
+}
+
   
 
 
