@@ -4519,7 +4519,7 @@ input, select, textarea {
 		display: none;
 		position: fixed;
 		top: 0.75rem;
-		right: 0.75rem;
+		right: 2.5rem;
 		border: 0;
 		color: #ffffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
