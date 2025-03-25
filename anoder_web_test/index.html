@@ -108,21 +108,55 @@
 
 						<article class="post featured">
 							<header class="major">
-								<!-- 這個 `div` 是新的觸發點，當滾回這裡時觸發上個 sticky-header -->
-								<div class="trigger-point"></div>
-						
-								<h2><a href="#">asd</a></h2>
-								<div class="placeholder"></div>
-								<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-								facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-								amet nullam sed etiam veroeros.</p>
+							  <div class="trigger-point"></div>
+							  <h2><a href="#">證照能力🤙</a></h2>
+							  <div class="placeholder"></div>
+							  <p>在高中和大學和大學期間，我考取的各個不同的證照<br>
+								 其目的是好奇各塊領域都在做些甚麼<br>
+								 (當然也不排除是學校安排)
+							  </p>
 							</header>
-							<a href="#" class="image main"><img src="images/1_ME.jpg" alt="" /></a>
-							<ul class="actions special">
-								<li><a href="#" class="button large">Full Story</a></li>
-							</ul>
-						</article>
+						  
+							<!-- 圖文容器（左邊圖片 / 右邊文字） -->
+							<div class="text-image-wrapper">
 
+								<div class="carousel-caption" id="carouselCaption">
+								這裡會顯示對應的文字說明
+								</div>
+							  <!-- 這是你的「圖片」那一塊 -->
+							  <div class="carousel-container">
+								<img id="carouselImg" src="assets/carousel/pic1.png" alt="carousel image">
+							  </div>
+						  
+							  <!-- 這是你的「文字（caption）」那一塊 -->
+
+							</div>
+						  
+							<!-- ▼ 把按鈕和小圓點分離出來，放在外部的區塊 ▼ -->
+							<div class="carousel-navigation">
+								<div class="carousel-buttons">
+								  <!-- 左側按鈕 -->
+								  <button id="prevBtn">◀上一張</button>
+							  
+								  <!-- 中間的小圓點區域 -->
+								  <div class="dot-container">
+									<span class="dot" data-index="0"></span>
+									<span class="dot" data-index="1"></span>
+									<span class="dot" data-index="2"></span>
+									<!-- 依實際圖片數量增減 -->
+								  </div>
+							  
+								  <!-- 右側按鈕 -->
+								  <button id="nextBtn">下一張▶</button>
+								</div>
+							  </div>
+							  
+						  </article>
+						  
+
+
+						  
+						  
 						<article class="post featured">
 							<header class="major">
 								<!-- 這個 `div` 是新的觸發點，當滾回這裡時觸發上個 sticky-header -->
@@ -130,9 +164,7 @@
 						
 								<h2><a href="#">zxc</a></h2>
 								<div class="placeholder"></div>
-								<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-								facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-								amet nullam sed etiam veroeros.</p>
+								<p>8458</p>
 							</header>
 							<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
 							<ul class="actions special">
@@ -323,6 +355,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/flip.js"></script>
 			<script src="assets/js/ticky_header.js"></script>
+			<script src="assets/js/carousel.js"></script>
 
 			<script src="assets/js/mail.js"></script>
 	</body>
