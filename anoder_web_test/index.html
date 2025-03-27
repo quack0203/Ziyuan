@@ -89,7 +89,7 @@
 					<div id="main">
 						<article class="post featured">
 							<header class="major">
-								<h2><a href="#">自我介紹👦</a></h2> <!-- 這個保持不變，依然置中 -->
+								<h2><a>自我介紹👦</a></h2> <!-- 這個保持不變，依然置中 -->
 							</header>
 						
 							<!-- 讓文字和圖片分開 -->
@@ -109,7 +109,7 @@
 						<article class="post featured">
 							<header class="major">
 							  <div class="trigger-point"></div>
-							  <h2><a href="#">證照能力🤙</a></h2>
+							  <h2><a>證照能力🤙</a></h2>
 							  <div class="placeholder"></div>
 							  <p>在高中和大學和大學期間，我考取的各個不同的證照<br>
 								 其目的是好奇各塊領域都在做些甚麼<br>
@@ -155,27 +155,45 @@
 						  
 
 
-						  
-						  
+
+
+
+
+
 						<article class="post featured">
 							<header class="major">
-								<!-- 這個 `div` 是新的觸發點，當滾回這裡時觸發上個 sticky-header -->
-								<div class="trigger-point"></div>
-						
-								<h2><a href="#">zxc</a></h2>
-								<div class="placeholder"></div>
-								<p>8458</p>
+								<h2><a>熟練程式💻</a></h2> 
+								<p>第一次碰到程式，是在我高中那時<br>
+									當時使用的是arduino，並在當時做出成品<br>
+									那也可以說我踩上程式工程師的第一條道路<br>
+									如今，受大學的教導、實習的經驗<br>
+									讓我的語言基底更加多元💪<br>
+								</p>
 							</header>
-							<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-							<ul class="actions special">
-								<li><a href="#" class="button large">Full Story</a></li>
-							</ul>
+							<!-- 讓文字和圖片分開 -->
+							<div class="text-image-wrapper">
+								<p id="progressDesc"></p>
+						
+
+								<div class="progress-widget">
+									<div class="progress-bars">
+										<!-- 這裡內容會由 JS 動態產生 -->
+									</div>
+									<div class="progress-navigation">
+										<button id="progressPrev">◀上一組</button>
+										<button id="progressNext">下一組▶</button>
+									</div>
+								</div>
+							</div>
 						</article>
+
+
+
 						
 
 
 						<!-- Posts -->
-							<section class="posts">
+							<!-- <section class="posts">
 								<article>
 									<header>
 										<span class="date">April 24, 2017</span>
@@ -248,20 +266,23 @@
 										<li><a href="#" class="button">Full Story</a></li>
 									</ul>
 								</article>
-							</section>
+							</section> -->
 
 						<!-- Footer -->
 							<footer>
 								<div class="pagination">
+
+									<!-- 
+									<li><a href="generic.html">工作經驗</a></li>
+									<li><a href="elements.html">興趣愛好</a></li>
+									 -->
+									
 									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
+									<a href=".html" class="page active">關於我</a>
+									<a href="generic.html" class="page">工作經驗</a>
+									<a href="elements.html" class="page">興趣愛好</a>
+									<a href="generic.html" class="next">下一頁</a>
+
 								</div>
 							</footer>
 
@@ -358,5 +379,7 @@
 			<script src="assets/js/carousel.js"></script>
 
 			<script src="assets/js/mail.js"></script>
-	</body>
+
+			<script src="assets/js/test.js"></script>
+		</body>
 </html>
