@@ -3159,8 +3159,8 @@ input, select, textarea {
 			height: 3rem;
 			letter-spacing: 0.075em;
 			line-height: calc(3rem - 4px);
-			margin-left: -2px;
-			min-width: 3rem;
+			margin-left: 8px;  /* 改按鈕間隔*/
+			min-width: 6rem;/* 改按鈕寬度*/
 			position: relative;
 			text-align: center;
 			text-decoration: none;
@@ -3232,10 +3232,10 @@ input, select, textarea {
 			z-index: 1;
 		}
 
-			.pagination a:hover + a,
+			/* .pagination a:hover + a,
 			.pagination a:hover + span {
-				border-left-color: #18bfef;
-			}
+				border-left-color: #18bfef;          我不想要相鄰的也亮
+			} */
 
 		.pagination a.active {
 			background-color: #eeeeee;
@@ -5015,17 +5015,38 @@ input, select, textarea {
 }
 
 
+
+
+
+
  /* 按按鈕換圖片 */ 
-  /* 按鈕區容器 */
-  .carousel-buttons {
+
+
+  /* 按鈕設定 */ 
+ .carousel-buttons {
 	margin-bottom: 0.5rem;
   }
   
-  /* 按鈕基本樣式範例 */
   .carousel-buttons button {
-	margin: 0 0.5rem;
-	padding: 0.5rem 1rem;
+	margin: 0 10px;
+	padding: 5px 15px;
+	border: none;
+	background-color: #fdbc5a;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
   }
+  
+  .carousel-buttons button:hover {
+	background-color: #ffffff;
+  }
+
+  
+
+
+
+
   
   /* 小圓點容器 */
   .dot-container {
@@ -5048,3 +5069,149 @@ input, select, textarea {
 	background-color: #18bfef; /* 你想要的色號 */
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .progress-widget {
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	padding: 30px;
+	width: 600px; /* 可依需求調整 */
+	margin: 20px auto;
+	background-color: #fff;
+	height: 350px; /* 固定高度 */
+	position: relative; /* 設定定位參照 */
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* 讓內部進度條垂直置中 */
+  }
+
+
+  
+  
+  .progress-bars {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 100px; /* 增加底部空間，讓進度條往上 */
+
+  }
+  
+  .progress-item {
+	display: flex;
+	align-items: center;
+  }
+  
+  .progress-desc {
+	/* 改成 auto 或增大固定寬度 */
+	width: auto;
+	margin-right: 10px;
+	text-align: right;
+	font-weight: bold;
+	font-size: 14px;
+}
+  
+  .progress-bar-container {
+	flex: 1;
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	height: 25px;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .progress-bar {
+	height: 100%;
+	width: 0%; /* 實際寬度由 JS 更新 */
+	background-color: #18bfef;
+	transition: width 0.5s ease;
+	position: relative;
+  }
+  
+  .progress-label {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 14px;  /* 內部文字縮小 */
+	font-weight: bold;
+  }
+  
+
+
+  
+
+  .progress-navigation {
+	position: absolute;
+	bottom: 20px; /* 與容器底部的距離 */
+	left: 0;
+	width: 100%;
+	text-align: center;
+  }
+
+
+
+
+  
+  .progress-navigation button {
+	margin: 0 10px;
+	padding: 5px 15px;
+	border: none;
+	background-color: #fdbc5a;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+
+  .progress-navigation button:hover {
+	background-color: #ffffff;
+  }
