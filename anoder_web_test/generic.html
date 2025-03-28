@@ -47,23 +47,162 @@
 						</ul>
 					</nav>
 
-				<!-- Main -->
-					<div id="main">
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h1>This is a<br />
-									Generic Page</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
-								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+
+					<!-- Main -->
+					<div id="main">
+						<article class="post featured">
+							<header class="major">
+								<h2><a>實習公司👔</a></h2> <!-- 這個保持不變，依然置中 -->
+							</header>
+						
+							<!-- 讓文字和圖片分開 -->
+							<div class="text-image-wrapper">
+								<p>當出面試公司時，其實還蠻多家都面是成功<br/>
+									但最終會選擇精測的原因<br />
+									主要是因為，這裡有開放軟體工程🧐<br />
+									且工作內容又是我所想在其中學習的<br />
+									所以毅然決然則這間了😎
+								</p>
+						
+								<a href="https://www.cht-pt.com.tw/" class="image main">
+									<img src="images/work_pic.jpg" alt="自我介紹圖片" />
+								</a>
+							</div>
+						</article>
+						
+						<article class="post featured">
+							<header class="major">
+								<h2><a>實作專案🔧</a></h2> 
+								<p>
+									以下都是我在實習這期間<br>
+									所研究創作出來的作品<br>
+								</p>
+							</header>
+						</article>
+							<section class="posts">
+
+
+
+
+
+								<article>
+									<header>
+										<span class="date">Jan 22, 2024</span>
+										<h2><a >SI_MIPI產出</a></h2>
+									</header>
+									<a class="image fit"><img src="images/gen_1.png" alt="" /></a>
+									<p>
+										自動產生Result圖形(TDR,BandWidth,Skew,眼圖)<br>
+										且可吃多個案件，並將其製作成報告<br>
+										並且將各個數值寫成表格<br>
+										以利於<strong style="color: rgb(252, 151, 20);">減少工作週期，以及人為失誤</strong>
+									</p>
+								</article>
+
+
+
+
+
+								<article>
+									<header>
+										<span class="date">Feb 24, 2025</span>
+										<h2><a>重設Excitation</a></h2>
+									</header>
+									<a class="image fit"><img src="images/gen_2.png" alt="" /></a>
+									<p>
+										重新產出Excitation以及對應Lumped<br>
+										並讓其名稱互相對應，讓使用者觀察便利<br>
+										另一個則是讓元件能去其他檔案對應之點位進行取代<br>
+										整體也是<strong style="color: rgb(252, 151, 20);">減少工作週期，後續更能快速處裡</strong>
+
+									</p>
+								</article>
+
+
+								<article>
+									<header>
+										<span class="date">Nov 18, 2024</span>
+										<h2><a>派工系統</a></h2>
+									</header>
+									<p>
+										這是和其他同仁一起維護搭建而成的<br>
+										主要為Python Flask做為後端<br>
+										Vue作為提供團隊控制機台<br>
+										我主要擔任是自動將急案派件到指定機台內<br>
+										還有負責用MPI跟RSM來讓案件執行更加快速
+										讓自己以及管理員們<strong style="color: rgb(252, 151, 20);">能夠簡易操作控制</strong><br>
+										並且<strong style="color: rgb(252, 151, 20);">讓完成案件效率提升</strong>
+									</p>
+								</article>
+
+
+
+								<article>
+									<header>
+										<span class="date">Jul 18, 2024</span>
+										<h2><a>定時關機</a></h2>
+									</header>
+									<p>
+										我們有大量的機台在做使用<br>
+										所以裡用程式來去中斷PDU的Port來開關機<br>
+										利用爬蟲來持續確認其於機台是否開關機<br>
+										統計可<strong style="color: rgb(252, 151, 20);">節省電力約莫200度</strong>(機台為10台情況下)
+									</p>
+								</article>
+
+
+
+
+
+								<article>
+									<header>
+										<span class="date">Dec 27, 2024</span>
+										<h2><a>檢查機台狀態</a></h2>
+									</header>
+									<p>
+										利用Pyinstaller所打包出來的exe<br>
+										以及bat檔和PsTools相互作用加持下<br>
+										能夠自動檢查接案檔是否存在<br>
+										以及他的License是否存活<br>
+										結果就是<strong style="color: rgb(252, 151, 20);">讓機台少介入人力，並且提前預防錯誤</strong>
+									</p>
+
+								</article>
+
+
+
+
+
+
+								<article>
+									<header>
+										<span class="date">Jan 15, 2025</span>
+										<h2><a>統計資料</a></h2>
+									</header>
+							
+									<p>
+										利用SQL統整出先前所執行案件次數<br>
+										並寫利用自動郵件的執行檔來放入時間排成<br>
+										讓上層管理者知了各個細節以及使用情況<br>
+										<strong style="color: rgb(252, 151, 20);">無須手動統計</strong>，快速理解當前
+									</p>
+								</article>
+
+
+
+
+
+
+
+
 							</section>
+
+
+
+
+
+
 
 
 
@@ -76,6 +215,7 @@
 									 -->
 									
 									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="index.html" class="previous">上一頁</a>
 									<a href="index.html" class="page">關於我</a>
 									<a href="#" class="page active">工作經驗</a>
 									<a href="elements.html" class="page">興趣愛好</a>
