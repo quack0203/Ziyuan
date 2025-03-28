@@ -4989,7 +4989,7 @@ input, select, textarea {
 
 
   /* 螢幕寬度小於等於 980px 時，改變容器大小 */
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 768px) {
 	.carousel-caption {
 	width: 70%; 
 	}
@@ -5008,7 +5008,7 @@ input, select, textarea {
   }
 
 
-  @media screen and (max-width: 736px) {
+  @media screen and (max-width: 768px) {
 	.carousel-navigation {
 		width: 100%; 
 	}
@@ -5121,7 +5121,7 @@ input, select, textarea {
 	border: 2px solid #ccc;
 	border-radius: 10px;
 	padding: 30px;
-	width: 600px; /* 可依需求調整 */
+	width: 100%; /* 可依需求調整 */
 	margin: 20px auto;
 	background-color: #fff;
 	height: 350px; /* 固定高度 */
